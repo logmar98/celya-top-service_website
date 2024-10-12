@@ -179,7 +179,7 @@ p {
     background-color: rgb(9 41 66);
     gap: 20px;
     height: 400px;
-    padding: 20px;
+    padding: 30px;
 }
 .footer div{
     display: flex;
@@ -187,7 +187,27 @@ p {
     width: 100%;
     color: white;
 }
-.map{
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+.qr_code{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qr_code img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.map iframe{
     height: 100%;
     width: 100%;
 }
