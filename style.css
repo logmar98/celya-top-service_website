@@ -29,12 +29,15 @@ body, html {
 
 .nav_links{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     height: 60%;
 }
 
 .nav_links a{
     text-decoration: none;
+    height: 100%;
 }
 
 .nav_links a img{
@@ -51,7 +54,7 @@ body, html {
     align-items: center;
     position: relative;
     overflow: hidden;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .slides-container {
@@ -73,7 +76,7 @@ body, html {
     position: absolute;
     z-index: 1;
     text-align: center;
-    color: white;
+    color: #fff;
 }
 
 h1 {
@@ -96,6 +99,7 @@ p {
     margin: 30px 0;
     padding: 0 20px;
     gap: 20px; 
+    color: #092942;
 }
 .services_title{
     display: flex;
@@ -109,7 +113,7 @@ p {
     justify-content: center;
     align-items: start;
     width: 100%;
-
+    font-size: 3rem;
 }
 .service_left{
     opacity: 0; /* Initially hidden */
@@ -158,6 +162,7 @@ p {
     justify-content: start; 
     width: 100%;
     margin: 40px;
+    color: #092942;
 }
 .about_img{
     height: 400px;
@@ -185,7 +190,7 @@ p {
     display: flex;
     height: 100%;
     width: 100%;
-    color: white;
+    color: #9edaee;
 }
 .footer_content{
     display: flex;
@@ -210,4 +215,34 @@ p {
 .map iframe{
     height: 100%;
     width: 100%;
+}
+@media screen and (max-width: 768px){
+    .nav_bar{
+        height: 80px;
+        padding: 26px 10px;
+    }
+
+    .nav_links{
+        height: 30px;
+    }
+    
+    .service_right, .service_left{
+        transform: translateX(0);
+        transform: translateY(20%);
+    }
+    .active{
+        transform: translateY(0);
+    }
+    .service{
+        flex-direction: column;
+    }
+    .about{
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    .footer{
+        flex-direction: column;
+        padding: 20px 20px;
+        height: fit-content;
+    }
 }
