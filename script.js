@@ -27,3 +27,20 @@ function slideLeft() {
 }
 
 setInterval(slideLeft, 3000); // Slide every 3 seconds
+
+
+const services = document.querySelectorAll('.service');
+
+services.forEach((service) => {
+    window.addEventListener("load", eventListener);
+    window.addEventListener("scroll", eventListener);
+
+    function eventListener() {
+        const windowHeight = window.innerHeight;
+        const servicePosition = service.getBoundingClientRect().top;
+
+        if (servicePosition < windowHeight) {
+            service.classList.add('active');
+        }
+    }
+});
