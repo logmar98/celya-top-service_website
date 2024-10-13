@@ -54,7 +54,7 @@ body, html {
     align-items: center;
     position: relative;
     overflow: hidden;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .slides-container {
@@ -77,6 +77,7 @@ body, html {
     z-index: 1;
     text-align: center;
     color: #fff;
+    
 }
 
 h1 {
@@ -125,7 +126,9 @@ p {
     transform: translateX(100%); /* Move off the screen to the left */
     transition: all 1.5s ease-in-out; /* Smooth transition */
 }
-
+.service_content h2{
+    margin-bottom: 20px;
+}
 .active{
     opacity: 1; /* Fully visible */
     transform: translateX(0); /* Slide into place */
@@ -201,7 +204,6 @@ p {
     width: 50%;
 }
 .qr_code{
-    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,9 +214,46 @@ p {
     width: 300px;
     border-radius: 10px;
 }
+.map {
+    padding: 20px;
+}
 .map iframe{
     height: 100%;
     width: 100%;
+}
+.made_by{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #292929;
+    color: #fff;
+    text-decoration: none;
+}
+.made_by p{
+    margin: 0;
+    padding: 10px;
+    font-size: small;
+}
+.made_by p a{
+    color: #fff;
+    
+}
+
+
+
+@media screen and (max-width: 1100px){
+    .footer{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .map iframe{
+        height: 300px;
+    }
+    .footer div{
+        width: 46%;
+    }
 }
 @media screen and (max-width: 768px){
     .nav_bar{
@@ -230,19 +269,46 @@ p {
         transform: translateX(0);
         transform: translateY(20%);
     }
+    .service_img{
+        height: 400px;
+        width: 100%;
+    }
+    .service_left .service_img{
+        order: 0;
+    }
+    .service_left .service_content{
+        order: 1;
+    }
+    
+    .service_content{
+        margin: 0;
+        padding: 20px 20px;
+    }
     .active{
         transform: translateY(0);
     }
     .service{
         flex-direction: column;
     }
+    .map iframe{
+        height: 300px;
+    }
     .about{
         flex-direction: column;
         padding: 20px 20px;
+    }
+    .about_content{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .footer{
         flex-direction: column;
         padding: 20px 20px;
         height: fit-content;
     }
+    .footer div{
+        width: 100%;
+    }
 }
+
