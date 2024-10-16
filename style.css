@@ -73,11 +73,18 @@ body, html {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     z-index: 1;
     text-align: center;
     color: #fff;
     
+}
+.content p{
+    width: 70%;
 }
 
 h1 {
@@ -108,6 +115,7 @@ p {
     align-items: center;
     width: fit-content;
     margin: 20px 0;
+    font-size: 4em;
 }
 .service{
     display: flex;
@@ -167,6 +175,9 @@ p {
     margin: 40px;
     color: #092942;
 }
+.about_content p{
+    font-size: 21px;
+}
 .about_img{
     height: 400px;
     width: 100%;
@@ -202,6 +213,9 @@ p {
     align-items: center;
     gap: 20px;
     width: 50%;
+}
+.footer_content p{
+    margin: 0;
 }
 .qr_code{
     display: flex;
@@ -264,7 +278,9 @@ p {
     .nav_links{
         height: 30px;
     }
-    
+    .services_title{
+        font-size: 3em;
+    }
     .service_right, .service_left{
         transform: translateX(0);
         transform: translateY(20%);
@@ -309,6 +325,13 @@ p {
     }
     .footer div{
         width: 100%;
+    }
+    .content p{
+        width: 90%;
+        font-size: 20px;
+    }
+    .content h1{
+        font-size: 19px;
     }
 }
 

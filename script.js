@@ -3,9 +3,14 @@ const slidesContainer = document.createElement('div');
 slidesContainer.classList.add('slides-container');
 
 const slides = [
-    'images/camers.jpg',  // Update with your actual image names
+    'images/camers3.jpg',
+    'images/securty.jpg',
+    'images/cleaner2.jpg',
+    'images/camers4.jpg',
+    'images/securty3.jpg',
     'images/cleaner.jpg',
-    'images/securty.jpg'
+    'images/camers5.jpg',
+    'images/camers6.jpg',
 ];
 
 // Create slide elements
