@@ -7,10 +7,13 @@ const slides = [
     'images/securty.jpg',
     'images/cleaner2.jpg',
     'images/camers4.jpg',
-    'images/securty3.jpg',
+    'images/securty4.jpg',
     'images/cleaner.jpg',
     'images/camers5.jpg',
+    'images/securty3.jpg',
+    'images/cleaner4.webp',
     'images/camers6.jpg',
+    'images/cleaner5.jpg',
 ];
 
 // Create slide elements
