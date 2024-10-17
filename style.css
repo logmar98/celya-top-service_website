@@ -108,6 +108,7 @@ p {
     padding: 0 20px;
     gap: 20px; 
     color: #092942;
+    overflow: hidden;
 }
 .services_title{
     display: flex;
@@ -211,7 +212,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
     width: 50%;
 }
 .footer_content p{
